@@ -18,6 +18,6 @@ const userRouter = new Router({prefix: '/users'});
 userRouter.post('/', verifyUser, hanlePassword, create);
 
 // 当用户登录后返回对应的头像
-userRouter.get('/:userId/avater', avatarInfo);
+userRouter.get('/:userId/avatar', avatarInfo);
 
 module.exports = userRouter;
